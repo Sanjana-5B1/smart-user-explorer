@@ -1,0 +1,23 @@
+{
+  "name": "smart-user-explorer",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Sanjana-5B1/smart-user-explorer#readme",
+  "bugs": {
+    "url": "https://github.com/Sanjana-5B1/smart-user-explorer/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sanjana-5B1/smart-user-explorer.git"
+  },
+  "license": "ISC",
+  "author": "sanjana",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

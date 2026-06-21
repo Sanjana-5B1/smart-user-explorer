@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User Explorer</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="/index.html">Home</a>
+        <a href="/pages/card.html">Card</a>
+        <a href="/pages/toggle.html">Toggle</a>
+        <a href="/pages/randomUser.html">Random User</a>
+
+        <button onclick="toggleTheme()">🌙</button>
+    </div>
+
+    <div class="card">
+
+        <img
+            id="user-img"
+            src="../images/john.png"
+            alt="User Image">
+
+        <h2 id="user-name">John Doe</h2>
+
+        <p id="user-gender">Male</p>
+
+        <p id="user-age">🎂 Age : 25</p>
+
+        <p id="user-email">
+            📧 johndoe@gmail.com
+        </p>
+
+        <p id="user-phone">
+            📞 +91 9876543210
+        </p>
+
+        <p id="user-country">
+            🌍 India
+        </p>
+
+        <button onclick="randomUser()">
+            🎲 Generate User
+        </button>
+
+        <button onclick="copyEmail()">
+            📋 Copy Email
+        </button>
+
+        <button onclick="saveFavorite()">
+            ❤️ Favorite
+        </button>
+
+    </div>
+
+    <footer>
+        Smart User Explorer © 2026
+    </footer>
+
+    <script src="../js/randomUser.js"></script>
+    <script src="../js/theme.js"></script>
+
+</body>
+</html>
