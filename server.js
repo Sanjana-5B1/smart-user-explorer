@@ -1,10 +1,15 @@
 const express = require("express");
+const path = require("path");
+
 const app = express();
 const port = process.env.PORT || 6700;
 
-//to tell app,where static files -html/css/js are stored
-app.use(express.static("frontend"));
+app.use(express.static(__dirname));
 
-app.listen(port,function(){
-        console.log("App running on http://localhost:"+port);
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "index.html"));
+});
+
+app.listen(port, () => {
+    console.log(`Server running on port ${port}`);
 });
