@@ -1,34 +1,29 @@
-let isMale = true;
+let male = true;
 
-function toggle(){
+function toggle() {
 
+    if (male) {
 
-const img = document.getElementById("user-img");
-const name = document.getElementById("user-name");
-const gender = document.getElementById("user-gender");
+        document.getElementById("user-img").src =
+            "../image/jane.png";
 
-let count =
-    localStorage.getItem("toggleCount") || 0;
+        document.getElementById("user-name").innerText =
+            "Jane Doe";
 
-count++;
-localStorage.setItem("toggleCount", count);
+        document.getElementById("user-gender").innerText =
+            "Female";
 
-if(isMale){
+    } else {
 
-    img.src = "../image/jane.png";
-    name.innerText = "Jane Doe";
-    gender.innerText = "Female";
+        document.getElementById("user-img").src =
+            "../image/john.png";
 
-    isMale = false;
-}
-else{
+        document.getElementById("user-name").innerText =
+            "John Doe";
 
-    img.src = "../image/john.png";
-    name.innerText = "John Doe";
-    gender.innerText = "Male";
+        document.getElementById("user-gender").innerText =
+            "Male";
+    }
 
-    isMale = true;
-}
-
-
+    male = !male;
 }
